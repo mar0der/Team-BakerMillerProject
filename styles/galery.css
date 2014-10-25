@@ -1,7 +1,9 @@
 .slides {
 	padding: 0;
-	width: 853px;
-	height: 420px;
+	/*width: 853px;
+	 height: 420px;*/
+	width: 1495px;
+	height: 650px;
 	display: block;
 	margin: 0 auto;
 	position: relative;
@@ -27,8 +29,8 @@
 .slide {
 	top: 0;
 	opacity: 0;
-	width: 853px;
-	height: 420px;
+	width: 1495px;
+	height: 650px;
 	display: block;
 	position: absolute;
 	transform: perspective(5);
@@ -118,21 +120,22 @@ input#img-6:checked ~
 
 /*balloon*/
 
-.triangle-right {
-	width:40%;
+div#wrapper > header > p.triangle-right {
+	display: block;
+	width: 40%;
 	margin-left: 40px;
 	padding: 10px;
 	border-radius: 10px;
 	background: none repeat scroll 0% 0%;
 	background-color: rgba(255,255,255,0.6);
-	font-size: 1.5rem;
+	font-size: 1.5 rem;
 	color: #cf5c3f;
 	position: absolute;
-	top: 5%;
-	left:30%;
+	top: 7%;
+	left: 18%;
 }
 
-.triangle-right:after {
+div#wrapper > header > p.triangle-right:after {
 	content: "";
 	width: 0px;
 	border-width: 15px 40px 0px 0px;
@@ -143,4 +146,57 @@ input#img-6:checked ~
 	top: 15px;
 	left: -40px;
 	bottom: auto;
+}
+
+/***** Responsive Design part *****/
+
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+	.slides {
+		width: 1195px;
+		height: 650px;
+	}
+	.slide {
+
+		width: 1195px;
+		height: 650px;
+	}
+}
+
+/*responsive design for laptops*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	.slides {
+		width: 995px;
+		height: 550px;
+	}
+	.slide {
+
+		width: 995px;
+		height: 550px;
+	}
+}
+
+/*responsive design for tablets*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.slides {
+		width: 99%;
+		height: 450px;
+	}
+	.slide {
+
+		width: 99%;
+		height: 450px;
+	}
+}
+
+/*responsive design for smartphones*/
+@media screen and (max-width: 768px) {
+	.slides {
+		width: 99%;
+		height: 350px;
+	}
+	.slide {
+
+		width: 99%;
+		height: 350px;
+	}
 }

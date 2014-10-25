@@ -28,7 +28,7 @@ body, header, footer, div, nav, ul, li, p {
 /***** Site Wrapper *****/
 
 div#wrapper {
-	width: 80%;
+	width: 1500px;
 	margin: 0 auto;
 }
 
@@ -84,11 +84,10 @@ div#wrapper > header > nav > ul > li > a#current {
 /***** Main *****/
 
 div#mainContent {
-
+	margin-top: 15px;
 }
 
 div#mainContent > img {
-	margin-top: 15px;
 	height: 650px;
 }
 
@@ -101,7 +100,7 @@ div#wrapper > footer {
 	color: #FFF;
 	margin-top: 15px;
 	border-radius: 5px;
-	padding-top:5px;
+	padding-top: 5px;
 }
 
 div#wrapper > footer > p {
@@ -110,22 +109,30 @@ div#wrapper > footer > p {
 
 /***** Responsive Design part *****/
 
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+	div#wrapper {
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
+
 /*responsive design for laptops*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 	div#wrapper {
-		800px;
+		width: 1000px;
+		margin: 0 auto;
 	}
 }
 
 /*responsive design for tablets*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	div#wrapper {
-		width: 750px;
+		width: 100%;
 	}
 }
 
 /*responsive design for smartphones*/
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	div#wrapper {
 		width: 100%;
 		min-width: 240px;
