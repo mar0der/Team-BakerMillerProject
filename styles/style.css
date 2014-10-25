@@ -4,236 +4,130 @@
  September 2014
  */
 
-/***** Body *****/
+/***** Initial setup  and reseters *****/
 @font-face {
-    font-family: LDFComicSans;
-    src: url('../fonts/LDFComicSans.ttf');
+	font-family: LDFComicSans;
+	src: url('../fonts/LDFComicSans.ttf');
 }
 
-body {
-    background-image: url('../images/background2.jpg');
-    background-size: 1500px auto;
-    background-repeat: no-repeat;
-    background-color: #000;
-
-    color: #000305;
-    font-size: 14px;
-    font-family: 'LDFComicSans', Arial, sans-serif;
-    line-height: 1.429;
-    margin: 0 auto;
-    padding: 0;
-    text-align: left;
-
-    width: 70%;
+html {
+	background-color: #000;
+	background-image: url('../images/background2.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	font-family: 'LDFComicSans', Arial, sans-serif;
+	color: #000305;
 }
 
-/***** Headings *****/
-h2 {
-    font-size: 1.571em
+body, header, footer, div, nav, ul, li, p {
+	margin: 0;
+	padding: 0;
 }
 
-/* 22px */
-h3 {
-    font-size: 1.429em
+/***** Site Wrapper *****/
+
+div#wrapper {
+	width: 80%;
+	margin: 0 auto;
 }
 
-/* 20px */
-h4 {
-    font-size: 1.286em
+/***** HEADER *****/
+div#wrapper > header > img#logo {
+	margin: 0.2% 15px;
 }
 
-/* 18px */
-h5 {
-    font-size: 1.143em
+div#wrapper > header > p.triangle-right {
+	display: none; /* this works only in the Comics page/ History */
 }
 
-/* 16px */
-h6 {
-    font-size: 1em
+div#wrapper > header > nav {
+	background: #666;
+	font-size: 1.143em;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	border-radius: 5px;
 }
 
-/* 14px */
-
-h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    line-height: 1.1; /* 11px */
-    margin-bottom: .8em;
+div#wrapper > header > nav > ul {
+	list-style: none;
+	margin-left: 30px;
+	padding-left: 0;
 }
 
-/***** Anchors *****/
-a {
-    outline: 0;
+div#wrapper > header > nav > ul > li {
+	float: left;
+	display: inline;
 }
 
-a img {
-    border: 0px;
-    text-decoration: none;
+div#wrapper > header > nav > ul > li > a:link, div#wrapper > header > nav > ul > li a:visited {
+	color: #fff;
+	display: inline-block;
+	height: 30px;
+	padding: 5px 23px;
+	text-decoration: none;
 }
 
-/***** Main Navigation *****/
-
-.topHeader nav {
-    background: #666;
-    font-size: 1.143em;
-    height: 40px;
-    line-height: 30px;
-    margin: 0 auto 30px auto;
-    text-align: center;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+div#wrapper > header > nav > ul > li > a:active {
+	transition: background 0.5s ease-out;
+	background: #d87c65;
+	color: #fff;
+	text-shadow: none !important;
 }
 
-.topHeader nav ul {
-    list-style: none;
-    margin: 0 auto;
-    padding-left: 0;
+div#wrapper > header > nav > ul > li > a#current {
+	background: #CF5C3F;
 }
 
-.topHeader nav ul li {
-    float: left;
-    display: inline;
+/***** Main *****/
+
+div#mainContent {
+
 }
 
-.topHeader nav a:link, .topHeader nav a:visited {
-    color: #fff;
-    display: inline-block;
-    height: 30px;
-    padding: 5px 23px;
-    text-decoration: none;
-}
-
-.topHeader nav a:hover, .topHeader nav a:active {
-    transition: background 0.5s ease-out;
-    background: #d87c65;
-    color: #fff;
-    text-shadow: none !important;
-}
-
-#current {
-    background: #CF5C3F;
-}
-
-.topHeader img {
-    margin: 3% 0;
-}
-
-/***** Content Area *****/
-
-.wrapper {
-    overflow: hidden;
-    line-height: 25px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+div#mainContent > img {
+	margin-top: 15px;
+	height: 650px;
 }
 
 /***** Footer *****/
 
-.mainFooter {
-    width: 100%;
-    float: left;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-left: 0;
-    background-color: #666;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    color: #FFF;
+div#wrapper > footer {
+	width: 100%;
+	height: 40px;
+	background-color: #666;
+	color: #FFF;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding-top:5px;
 }
 
-.mainFooter p {
-    width: 91%;
-    margin: 2% auto;
+div#wrapper > footer > p {
+	margin-left: 15px;
 }
 
-/***** Media Queries *****/
+/***** Responsive Design part *****/
 
-@media only screen and (min-width: 150px) and (max-width: 780px) {
-    .body {
-        clear: both;
-        margin: 0 auto;
-        width: 90%;
-        font-size: 90%;
-    }
+/*responsive design for laptops*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	div#wrapper {
+		800px;
+	}
+}
 
-    .topHeader nav {
-        background: #666;
-        font-size: 1.143em;
-        height: 160px;
-        line-height: 30px;
-        margin-bottom: 0;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-    }
+/*responsive design for tablets*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	div#wrapper {
+		width: 750px;
+	}
+}
 
-
-    .topHeader nav a:link, .topHeader nav a:visited {
-        color: #FFF;
-        display: block;
-        height: 30px;
-        padding: 5px 0;
-        text-decoration: none;
-    }
-
-    .topHeader nav li a {
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-    }
-
-    .wrapper {
-        overflow: hidden;
-        line-height: 25px;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        margin-top: 4%;
-        margin-bottom: 2%;
-    }
-
-    .topcontent {
-        background-color: #FFF;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        padding: 2% 5%;
-        margin-bottom: 4%;
-    }
-
-    .bottomcontent {
-        background-color: #FFF;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        padding: 2% 5%;
-    }
-
-    .content {
-        width: 100%;
-        float: left;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-    }
-
-    .mainFooter {
-        width: 100%;
-        float: left;
-        margin: 2% 0;
-        padding-left: 0;
-        background-color: #666;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        color: #FFF;
-    }
-
-    .mainFooter p {
-        width: 86%;
-        margin: 2% auto;
-    }
-
+/*responsive design for smartphones*/
+@media screen and (min-width: 641px) and (max-width: 768px) {
+	div#wrapper {
+		width: 100%;
+		min-width: 240px;
+	}
 }
