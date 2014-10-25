@@ -1,0 +1,35 @@
+article
+{
+    background-color:transparent;
+    margin-left:10%;
+    width: 75%;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+article header
+{
+    width:100%;
+    color:#A80000 ;
+    font-size:2em;
+}
+
+article div::first-letter
+{
+    font-size:200%;
+    color: #E00000;
+}
+
+article div p
+{
+   padding-left: 33%;
+    color:#E00000;
+}
+
+footer a
+{
+    padding-left: 5%;
+    color:#E00000;
+    font-style:italic;
+}
+
