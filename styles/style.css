@@ -33,6 +33,11 @@ div#wrapper {
 }
 
 /***** HEADER *****/
+
+nav {
+    padding-left: 5%;
+}
+
 div#wrapper > header > img#logo {
     margin: 0.2% 15px;
     display: inline-block;
@@ -45,7 +50,6 @@ div#wrapper > header > div#baloonContainer {
     height: 160px;
     display: inline-block;
     vertical-align: top;
-
 }
 
 div#wrapper > header > div > p.triangle-right {
@@ -131,11 +135,10 @@ input[type=checkbox]:checked + div {
 
 #submenu div ul {
     padding-left: 0;
-
 }
 
 #submenu div ul a {
-    width: 70%;
+    width: 80%;
     padding: 0 20px 0 20px;
     text-align: center;
     display: block;
@@ -145,7 +148,7 @@ input[type=checkbox]:checked + div {
     border-bottom: white 1px solid;
     list-style: none;
 }
-#submenu div ul a:visited {
+#submenu div ul a:visited, #submenu div ul a:link {
     color:white;
 }
 #submenu div ul a:last-child {
