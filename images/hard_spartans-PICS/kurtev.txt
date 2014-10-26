@@ -1,0 +1,6 @@
+His name is Teodor Kurtev and he is a programer warrior and a Fornt-Line fighter for a couple of years now. 
+Àt the moment he is working as a ASP.NET MVC killer-developer at Software University of Sparta.
+He has graduated top of his class at Telerik Academy for error killers, class 2012-2013. 
+He has dabbled in C# wheapon knowledge, ASP.NET MVC fights, ASP.NET WebForms defence, WPF, XAML, WinRT, MSSQL, 
+EntityFramework, HTML5, CSS3, JavaScript, JQuery, Node.js, PHP, MySQL 
+and many more bug killer-softuni spartan technologies and wheapons for mass destruction of system errors.
