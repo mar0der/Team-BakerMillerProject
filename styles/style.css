@@ -35,9 +35,18 @@ div#wrapper {
 /***** HEADER *****/
 div#wrapper > header > img#logo {
 	margin: 0.2% 15px;
+	display: inline-block;
 }
 
-div#wrapper > header > p.triangle-right {
+div#wrapper > header > div#baloonContainer {
+	width: 70%;
+	height: 160px;
+	display: inline-block;
+	vertical-align: top;
+	display: relative;
+}
+
+div#wrapper > header > div > p.triangle-right {
 	display: none; /* this works only in the Comics page/ History */
 }
 

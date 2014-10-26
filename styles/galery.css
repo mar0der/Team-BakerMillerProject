@@ -120,31 +120,32 @@ input#img-6:checked ~
 
 /*balloon*/
 
-div#wrapper > header > p.triangle-right {
+div#wrapper > header > div > p.triangle-right {
 	display: block;
 	width: 40%;
 	margin-left: 40px;
 	padding: 10px;
+	padding-bottom:0;
 	border-radius: 10px;
 	background: none repeat scroll 0% 0%;
 	background-color: rgba(255,255,255,0.6);
-	font-size: 1.5 rem;
+	font-size: 20px;
 	color: #cf5c3f;
-	position: absolute;
-	top: 7%;
-	left: 18%;
+	position: relative;
+	top: 15%;
+	left: -10px;
 }
 
-div#wrapper > header > p.triangle-right:after {
+div#wrapper > header > div > p.triangle-right:after {
 	content: "";
 	width: 0px;
 	border-width: 15px 40px 0px 0px;
 	border-color: transparent rgba(255,255,255,0.6);
 	border-style: solid;
 	display: block;
-	position: absolute;
-	top: 15px;
-	left: -40px;
+	position: relative;
+	top: -15px;
+	left: -50px;
 	bottom: auto;
 }
 
