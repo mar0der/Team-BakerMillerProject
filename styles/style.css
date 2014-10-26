@@ -34,7 +34,9 @@ div#wrapper {
 
 /***** HEADER *****/
 
-nav {
+nav
+{
+    background-image: url(../images/header_footer.jpg);
     padding-left: 5%;
 }
 
@@ -56,8 +58,8 @@ div#wrapper > header > div > p.triangle-right {
     display: none; /* this works only in the Comics page/ History */
 }
 
-div#wrapper > header > nav {
-    background: #666;
+div#wrapper > header > nav
+{
     font-size: 1.143em;
     height: 40px;
     line-height: 30px;
@@ -172,10 +174,12 @@ div#mainContent > img {
 
 /***** Footer *****/
 
-div#wrapper > footer {
+div#wrapper > footer
+{
+    background-image: url(../images/header_footer.jpg);
     width: 100%;
     height: 40px;
-    background-color: #666;
+    /*background-color: #666;*/
     color: #FFF;
     margin-top: 15px;
     border-radius: 5px;
