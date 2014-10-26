@@ -3,7 +3,7 @@
 	/*width: 853px;
 	 height: 420px;*/
 	width: 1495px;
-	height: 650px;
+	height: 550px;
 	display: block;
 	margin: 0 auto;
 	position: relative;
@@ -30,7 +30,7 @@
 	top: 0;
 	opacity: 0;
 	width: 1495px;
-	height: 650px;
+	height: 550px;
 	display: block;
 	position: absolute;
 	transform: perspective(5);
@@ -154,12 +154,12 @@ div#wrapper > header > div > p.triangle-right:after {
 @media screen and (min-width: 1201px) and (max-width: 1500px) {
 	.slides {
 		width: 1195px;
-		height: 650px;
+		height: 550px;
 	}
 	.slide {
 
 		width: 1195px;
-		height: 650px;
+		height: 550px;
 	}
 }
 

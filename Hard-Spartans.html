@@ -1,86 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>TEAM "BAKER-MILLER PINK"</title>
-        <meta charset="utf-8" />
+<html>
+<head>
+    <title>TEAM "BAKER-MILLER PINK"</title>
+    <meta charset="utf-8"/>
 
-        <link rel="stylesheet" href="styles/style.css" type="text/css" />
-  <link rel="stylesheet" href="styles/Hard-Spartans.css"/>
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/Soft-Spartans.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <img src="images/logo3.gif" alt="BAKER-MILLER PINK Logo" id="logo">
 
-    </head>
-
-    <body>
-
-      <header class="topHeader">
-            <img src="images/logo3.gif" alt="BAKER-MILLER PINK Logo">
-            <nav>
-                <ul>
-                    <li class="active">
-                        <a href="index.html">Sparta</a>
-                    </li>
-                    <li>
-                        <a href="History-scene1.html">History</a>
-                    </li>
-                    <li>
-                        <a href="Hard-Spartans.html" id="current">Hard Spartans</a>
-                    </li>
-
-                    <li>
-                        <a href="Soft-Spartans.html">Soft Spartans</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-
-    <section>
-        <article>
-            <header id="King_Nakov">King Nakov</header>
-            <img src="img_hard_spartans/nakov.jpg" alt="nakov">
-            <div>
-                Svetlin Nakov was a programmer-warrior king of the software city-state of SoftUni. <br>
-                He led the software forces during the Second BugFix War and is remembered for his victory at the Battle of Thermopylae IDE. <br>
-            </div>
-            <footer>
-                <a href="http://www.nakov.com/" target="_blank">Bio and more info here!</a>
-            </footer>
-        </article>
-
-        <article>
-            <header id="Mario_Peshev">Mario Peshev</header>
-            <img src="img_hard_spartans/mario.png" alt="mario">
-            <div>
-                Mario Peshev - WordPress Lead and Consultant captain-warrior. <br>
-                Lead WordPress Architect at DevriX Soft-spartan General. <br>
-                Open Source Evangelist and strategy soft-war director. <br>
-                Open Source Contributor and Product Advisor of King Nakov. <br>
-            </div>
-            <footer>
-                <a href="http://peshev.net/blog/" target="_blank">Bio and more info here!</a>
-            </footer>
-        </article>
-
-        <article>
-            <header id="Mariyan_Marinov">Mariyan Marinov</header>
-            <img src="img_hard_spartans/marian.jpg" alt="marinov">
-            <div>
-                Mariyan is a system administrator warrior with long experience in the battle field. <br>
-                He started fighting as such in the summer of 1996. <br>
-                He is a part time instructor at Soft-University, where he is training spartan Security and Linux System Administration fighting. <br>
-            </div>
-            <footer>
-                <a href="http://hydra.azilian.net/blog/about/" target="_blank">Bio and more info here!</a>
-            </footer>
-        </article>
-    </section>
-
-    <footer class="mainFooter">
-            <p>
-                Copyright &copy; 2014 <a href="http://softuni.bg">SoftUni</a> - BakerMillerPink Team
+        <div id="baloonContainer">
+            <p class="triangle-right" id="scene1">
+                Nakov meets the headquarters of the other universities...
             </p>
-        </footer>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" >Sparta</a>
+                </li>
 
+                <li>
+                    <div id="submenu">
+                        <label for="toggle">The story</label>
+                        <input type="checkbox" id="toggle">
+
+                        <div>
+                            <ul>
+                                <a href="TheStory-Scene1.html">
+                                    <li>Scene 1</li>
+                                </a>
+                                <a href="TheStory-Scene2.html">
+                                    <li>Scene 2</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="active">
+                    <a href="Hard-Spartans.html" id="current">Hard Spartans</a>
+                </li>
+
+                <li>
+                    <a href="Soft-Spartans.html">Soft Spartans</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <div id="mainContent">
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>
+            Copyright &copy; 2014 <a href="http://softuni.bg">SoftUni</a> - BakerMillerPink Team
+        </p>
+    </footer>
+</div>
 </body>
 </html>

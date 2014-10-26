@@ -6,144 +6,220 @@
 
 /***** Initial setup  and reseters *****/
 @font-face {
-	font-family: LDFComicSans;
-	src: url('../fonts/LDFComicSans.ttf');
+    font-family: LDFComicSans;
+    src: url('../fonts/LDFComicSans.ttf');
 }
 
 html {
-	background-color: #000;
-	background-image: url('../images/background.jpg');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	font-size: 14px;
-	font-family: 'LDFComicSans', Arial, sans-serif;
-	color: #000305;
+    background-color: #000;
+    background-image: url('../images/background.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    font-family: 'LDFComicSans', Arial, sans-serif;
+    color: #000305;
 }
 
 body, header, footer, div, nav, ul, li, p {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /***** Site Wrapper *****/
 
 div#wrapper {
-	width: 1500px;
-	margin: 0 auto;
+    width: 1500px;
+    margin: 0 auto;
 }
 
 /***** HEADER *****/
 div#wrapper > header > img#logo {
-	margin: 0.2% 15px;
-	display: inline-block;
+    margin: 0.2% 15px;
+    display: inline-block;
+    height: 100%;
+    width: auto;
 }
 
 div#wrapper > header > div#baloonContainer {
-	width: 70%;
-	height: 160px;
-	display: inline-block;
-	vertical-align: top;
-	display: relative;
+    width: 70%;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+
 }
 
 div#wrapper > header > div > p.triangle-right {
-	display: none; /* this works only in the Comics page/ History */
+    display: none; /* this works only in the Comics page/ History */
 }
 
 div#wrapper > header > nav {
-	background: #666;
-	font-size: 1.143em;
-	height: 40px;
-	line-height: 30px;
-	margin: 0 auto 0 auto;
-	text-align: center;
-	border-radius: 5px;
+    background: #666;
+    font-size: 1.143em;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    border-radius: 5px;
 }
 
 div#wrapper > header > nav > ul {
-	list-style: none;
-	margin-left: 30px;
-	padding-left: 0;
+    list-style: none;
+    margin-left: 30px;
+    padding-left: 0;
 }
 
 div#wrapper > header > nav > ul > li {
-	float: left;
-	display: inline;
+    float: left;
+    display: inline;
 }
 
 div#wrapper > header > nav > ul > li > a:link, div#wrapper > header > nav > ul > li a:visited {
-	color: #fff;
-	display: inline-block;
-	height: 30px;
-	padding: 5px 23px;
-	text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 23px;
+    text-decoration: none;
 }
 
 div#wrapper > header > nav > ul > li > a:active {
-	transition: background 0.5s ease-out;
-	background: #d87c65;
-	color: #fff;
-	text-shadow: none !important;
+    transition: background 0.5s ease-out;
+    background: #d87c65;
+    color: #fff;
+    text-shadow: none !important;
 }
 
-div#wrapper > header > nav > ul > li > a#current {
-	background: #CF5C3F;
+div#wrapper > header > nav > ul > li #current {
+    background: #CF5C3F;
+}
+
+#submenu {
+    text-align: center;
+    position: relative;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+nav ul li:nth-last-of-type(2) {
+    padding: 0;
+}
+
+label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 23px;
+    text-decoration: none;
+}
+
+input[type=checkbox] + div {
+    display: none;
+    padding-left: 0;
+}
+
+input[type=checkbox]:checked + div {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#submenu div ul {
+    padding-left: 0;
+
+}
+
+#submenu div ul a {
+    width: 70%;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    display: block;
+    z-index: 100;
+    background: #666;
+    text-decoration: none;
+    border-bottom: white 1px solid;
+    list-style: none;
+}
+
+#submenu div ul a:last-child {
+    border-bottom: none;
+}
+
+#submenu div ul a:hover {
+    font-weight: bold;
 }
 
 /***** Main *****/
 
 div#mainContent {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 div#mainContent > img {
-	height: 650px;
+    height: 650px;
 }
 
 /***** Footer *****/
 
 div#wrapper > footer {
-	width: 100%;
-	height: 40px;
-	background-color: #666;
-	color: #FFF;
-	margin-top: 15px;
-	border-radius: 5px;
-	padding-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #666;
+    color: #FFF;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-top: 5px;
 }
 
 div#wrapper > footer > p {
-	margin-left: 15px;
+    margin-left: 15px;
 }
 
 /***** Responsive Design part *****/
 
 @media screen and (min-width: 1201px) and (max-width: 1500px) {
-	div#wrapper {
-		width: 1200px;
-		margin: 0 auto;
-	}
+    div#wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    /*header */
+    div#wrapper > header > img#logo {
+        height: 100%;
+        width: auto;
+    }
 }
 
 /*responsive design for laptops*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-	div#wrapper {
-		width: 1000px;
-		margin: 0 auto;
-	}
+    div#wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*header */
+    div#wrapper > header > img#logo {
+        height: 100%;
+        width: auto;
+    }
 }
 
 /*responsive design for tablets*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-	div#wrapper {
-		width: 100%;
-	}
+    div#wrapper {
+        width: 100%;
+    }
 }
 
 /*responsive design for smartphones*/
 @media screen and (max-width: 768px) {
-	div#wrapper {
-		width: 100%;
-		min-width: 240px;
-	}
+    div#wrapper {
+        width: 100%;
+        min-width: 240px;
+    }
 }
