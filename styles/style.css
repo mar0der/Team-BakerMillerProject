@@ -125,12 +125,14 @@ label {
 input[type=checkbox] + div {
     display: none;
     padding-left: 0;
+    width:100%
 }
 
 input[type=checkbox]:checked + div {
     display: block;
     position: absolute;
     z-index: 1;
+    width:100%
 }
 
 #submenu div ul {
@@ -138,25 +140,24 @@ input[type=checkbox]:checked + div {
 }
 
 #submenu div ul a {
-    width: 80%;
     padding: 0 20px 0 20px;
     text-align: center;
     display: block;
     z-index: 100;
     background: #666;
     text-decoration: none;
-    border-bottom: white 1px solid;
+    border-top: white 1px solid;
     list-style: none;
+    box-sizing: border-box;
 }
+
 #submenu div ul a:visited, #submenu div ul a:link {
-    color:white;
-}
-#submenu div ul a:last-child {
-    border-bottom: none;
+    color: white;
 }
 
 #submenu div ul a:hover {
-    font-weight: bold;
+    text-shadow: 0 0 1px white;
+    box-sizing: border-box;
 }
 
 /***** Main *****/
