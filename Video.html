@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TEAM "BAKER-MILLER PINK"</title>
+		<title>www.SoftSparta.com - SoftUni Team Project - "BAKER-MILLER PINK"</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="styles/style.css" type="text/css" />
 		<link rel="stylesheet" href="styles/video.css" type="text/css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			( function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=134824992521&version=v2.0";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<div id="wrapper">
 			<!-- Header -->
 			<header>
@@ -67,9 +79,15 @@
 			</div>
 			<!-- Footer -->
 			<footer>
-				<p>
-					Copyright &copy; 2014 <a href="http://softuni.bg">SoftUni</a> - BakerMillerPink Team
+				<p style="display: inline-block; margin-left: 15px; float: left;">
+					Copyright &copy; 2014 <a href="http://softuni.bg" target="_blank">SoftUni</a> - BakerMillerPink Team
+
 				</p>
+				<div id="fb-like">
+					<div id="fb-root"></div>
+					<div id="fb-root"></div>
+					<div class="fb-like" data-href="https://www.facebook.com/SoftSparta" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				</div>
 			</footer>
 		</div>
 	</body>

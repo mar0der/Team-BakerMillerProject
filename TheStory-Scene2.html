@@ -1,161 +1,181 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>TEAM "BAKER-MILLER PINK"</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="styles/Scenes-dropdown.css" type="text/css" />
-    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
-    <link rel="stylesheet" href="styles/galery.css" type="text/css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/main.js"></script>
-</head>
-<body>
-<div id="wrapper">
-    <!-- Header -->
-    <header>
-        <img src="images/logo3.gif" alt="BAKER-MILLER PINK Logo" id="logo">
+	<head>
+		<title>www.SoftSparta.com - SoftUni Team Project - "BAKER-MILLER PINK"</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="styles/Scenes-dropdown.css" type="text/css" />
+		<link rel="stylesheet" href="styles/style.css" type="text/css"/>
+		<link rel="stylesheet" href="styles/galery.css" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+			( function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=134824992521&version=v2.0";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div id="wrapper">
+			<!-- Header -->
+			<header>
+				<img src="images/logo3.gif" alt="BAKER-MILLER PINK Logo" id="logo">
 
-        <div id="baloonContainer">
-            <p class="triangle-right" id="scene2">
-                Nakov meets the headquarters of the other universities...
-            </p>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Sparta</a>
-                </li>
+				<div id="baloonContainer">
+					<p class="triangle-right" id="scene2">
+						Nakov meets the headquarters of the other universities...
+					</p>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Sparta</a>
+						</li>
 
-                <li>
-                    <div id="submenu">
-                        <label for="toggle" id="current">The story</label>
-                        <input type="checkbox" id="toggle">
+						<li>
+							<div id="submenu">
+								<label for="toggle" id="current">The story</label>
+								<input type="checkbox" id="toggle">
 
-                        <div>
-                            <ul>
-                                <a href="TheStory-Scene1.html">
-                                    <li style="/*change the color to orange and make it important */">Scene 1</li>
-                                </a>
-                                <a href="TheStory-Scene2.html">
-                                    <li style="/*change the color to orange and make it important */">Scene 2</li>
-                                </a>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
+								<div>
+									<ul>
+										<a href="TheStory-Scene1.html">
+										<li style="/*change the color to orange and make it important */">
+											Scene 1
+										</li> </a>
+										<a href="TheStory-Scene2.html">
+										<li style="/*change the color to orange and make it important */">
+											Scene 2
+										</li> </a>
+									</ul>
+								</div>
+							</div>
+						</li>
 
-                <li>
-                    <a href="Hard-Spartans.html">Hard Spartans</a>
-                </li>
+						<li>
+							<a href="Hard-Spartans.html">Hard Spartans</a>
+						</li>
 
-                <li>
-                    <a href="Soft-Spartans.html">Soft Spartans</a>
-                </li>
+						<li>
+							<a href="Soft-Spartans.html">Soft Spartans</a>
+						</li>
 
-                <li>
-                    <a href="Video.html">Video</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Main Content -->
-    <div id="mainContent">
-        <ul class="slides">
-            <input type="radio" name="radio-btn" id="img-1" checked/>
-            <li class="slide-container">
-                <div class="slide">
-                    <img src="images/history/scene2/01.S2-PrepareForBattle.jpg"/>
-                </div>
-                <div class="nav">
-                    <label for="img-6" class="prev">&#x2039;</label>
-                    <label for="img-2" class="next">&#x203a;</label>
-                </div>
-            </li>
+						<li>
+							<a href="Video.html">Video</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Main Content -->
+			<div id="mainContent">
+				<ul class="slides">
+					<input type="radio" name="radio-btn" id="img-1" checked/>
+					<li class="slide-container">
+						<div class="slide">
+							<img src="images/history/scene2/01.S2-PrepareForBattle.jpg"/>
+						</div>
+						<div class="nav">
+							<label for="img-6" class="prev">&#x2039;</label>
+							<label for="img-2" class="next">&#x203a;</label>
+						</div>
+					</li>
 
-            <input type="radio" name="radio-btn" id="img-2"/>
-            <li class="slide-container">
-                <div class="slide">
-                    <img src="images/history/scene2/02.S2-SoftUniAttack.jpg"/>
-                </div>
-                <div class="nav">
-                    <label for="img-1" class="prev">&#x2039;</label>
-                    <label for="img-3" class="next">&#x203a;</label>
-                </div>
-            </li>
+					<input type="radio" name="radio-btn" id="img-2"/>
+					<li class="slide-container">
+						<div class="slide">
+							<img src="images/history/scene2/02.S2-SoftUniAttack.jpg"/>
+						</div>
+						<div class="nav">
+							<label for="img-1" class="prev">&#x2039;</label>
+							<label for="img-3" class="next">&#x203a;</label>
+						</div>
+					</li>
 
-            <input type="radio" name="radio-btn" id="img-3"/>
-            <li class="slide-container">
-                <div class="slide">
-                    <img src="images/history/scene2/03.S2-TheUnfixable ErrorsBattle.jpg"/>
-                </div>
-                <div class="nav">
-                    <label for="img-2" class="prev">&#x2039;</label>
-                    <label for="img-4" class="next">&#x203a;</label>
-                </div>
-            </li>
+					<input type="radio" name="radio-btn" id="img-3"/>
+					<li class="slide-container">
+						<div class="slide">
+							<img src="images/history/scene2/03.S2-TheUnfixable ErrorsBattle.jpg"/>
+						</div>
+						<div class="nav">
+							<label for="img-2" class="prev">&#x2039;</label>
+							<label for="img-4" class="next">&#x203a;</label>
+						</div>
+					</li>
 
-            <input type="radio" name="radio-btn" id="img-4"/>
-            <li class="slide-container">
-                <div class="slide">
-                    <img src="images/history/scene2/04.S2-RelentlessProgrammers.jpg"/>
-                </div>
-                <div class="nav">
-                    <label for="img-3" class="prev">&#x2039;</label>
-                    <label for="img-5" class="next">&#x203a;</label>
-                </div>
-            </li>
+					<input type="radio" name="radio-btn" id="img-4"/>
+					<li class="slide-container">
+						<div class="slide">
+							<img src="images/history/scene2/04.S2-RelentlessProgrammers.jpg"/>
+						</div>
+						<div class="nav">
+							<label for="img-3" class="prev">&#x2039;</label>
+							<label for="img-5" class="next">&#x203a;</label>
+						</div>
+					</li>
 
-            <input type="radio" name="radio-btn" id="img-5"/>
-            <li class="slide-container">
-                <div class="slide">
-                    <img src="images/history/scene2/05.S2-AfterBattleReturn.jpg"/>
-                </div>
-                <div class="nav">
-                    <label for="img-4" class="prev">&#x2039;</label>
-                    <label for="img-6" class="next">&#x203a;</label>
-                </div>
-            </li>
+					<input type="radio" name="radio-btn" id="img-5"/>
+					<li class="slide-container">
+						<div class="slide">
+							<img src="images/history/scene2/05.S2-AfterBattleReturn.jpg"/>
+						</div>
+						<div class="nav">
+							<label for="img-4" class="prev">&#x2039;</label>
+							<label for="img-6" class="next">&#x203a;</label>
+						</div>
+					</li>
 
-            <input type="radio" name="radio-btn" id="img-6"/>
-            <li class="slide-container">
-                <div class="slide">
-                    <img src="images/history/scene2/06.S2-AfterBattleRest.jpg"/>
-                </div>
-                <div class="nav">
-                    <label for="img-5" class="prev">&#x2039;</label>
-                    <label for="img-7" class="next">&#x203a;</label>
-                </div>
-            </li>
+					<input type="radio" name="radio-btn" id="img-6"/>
+					<li class="slide-container">
+						<div class="slide">
+							<img src="images/history/scene2/06.S2-AfterBattleRest.jpg"/>
+						</div>
+						<div class="nav">
+							<label for="img-5" class="prev">&#x2039;</label>
+							<label for="img-7" class="next">&#x203a;</label>
+						</div>
+					</li>
 
-            <input type="radio" name="radio-btn" id="img-7"/>
-            <li class="slide-container">
-                <div class="slide">
-                    <img src="images/history/scene2/07.S2-IntroducingKingNakov.jpg"/>
-                </div>
-                <div class="nav">
-                    <label for="img-6" class="prev">&#x2039;</label>
-                    <label for="img-1" class="next">&#x203a;</label>
-                </div>
-            </li>
+					<input type="radio" name="radio-btn" id="img-7"/>
+					<li class="slide-container">
+						<div class="slide">
+							<img src="images/history/scene2/07.S2-IntroducingKingNakov.jpg"/>
+						</div>
+						<div class="nav">
+							<label for="img-6" class="prev">&#x2039;</label>
+							<label for="img-1" class="next">&#x203a;</label>
+						</div>
+					</li>
 
-            <li class="nav-dots">
-                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-                <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-                <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-                <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-                <label for="img-7" class="nav-dot" id="img-dot-7"></label>
-            </li>
-        </ul>
-    </div>
-    <!-- Footer -->
-    <footer>
-        <p>
-            Copyright &copy; 2014 <a href="http://softuni.bg">SoftUni</a> - BakerMillerPink Team
-        </p>
-    </footer>
-</div>
-</body>
+					<li class="nav-dots">
+						<label for="img-1" class="nav-dot" id="img-dot-1"></label>
+						<label for="img-2" class="nav-dot" id="img-dot-2"></label>
+						<label for="img-3" class="nav-dot" id="img-dot-3"></label>
+						<label for="img-4" class="nav-dot" id="img-dot-4"></label>
+						<label for="img-5" class="nav-dot" id="img-dot-5"></label>
+						<label for="img-6" class="nav-dot" id="img-dot-6"></label>
+						<label for="img-7" class="nav-dot" id="img-dot-7"></label>
+					</li>
+				</ul>
+			</div>
+			<!-- Footer -->
+			<footer>
+				<p style="display: inline-block; margin-left: 15px; float: left;">
+					Copyright &copy; 2014 <a href="http://softuni.bg" target="_blank">SoftUni</a> - BakerMillerPink Team
+
+				</p>
+				<div id="fb-like">
+					<div id="fb-root"></div>
+					<div id="fb-root"></div>
+					<div class="fb-like" data-href="https://www.facebook.com/SoftSparta" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
