@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>TEAM "BAKER-MILLER PINK"</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link rel="stylesheet" href="styles/video.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<div id="wrapper">
-    <!-- Header -->
-    <header>
-        <img src="images/logo3.gif" alt="BAKER-MILLER PINK Logo" id="logo">
-        <div id="baloonContainer">
-            <p class="triangle-right" id="scene1">
-                Nakov meets the headquarters of the other universities...
-            </p>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Sparta</a>
-                </li>
+	<head>
+		<title>TEAM "BAKER-MILLER PINK"</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles/style.css" type="text/css" />
+		<link rel="stylesheet" href="styles/video.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- Header -->
+			<header>
+				<img src="images/logo3.gif" alt="BAKER-MILLER PINK Logo" id="logo">
+				<div id="baloonContainer">
+					<p class="triangle-right" id="scene1">
+						Nakov meets the headquarters of the other universities...
+					</p>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Sparta</a>
+						</li>
 
-                <li>
-                    <div id="submenu">
-                        <label for="toggle">The story</label>
-                        <input type="checkbox" id="toggle">
-                        <div>
-                            <ul>
-                                <a href="TheStory-Scene1.html"><li>Scene 1</li></a>
-                                <a href="TheStory-Scene2.html"><li>Scene 2</li></a>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
+						<li>
+							<div id="submenu">
+								<label for="toggle">The story</label>
+								<input type="checkbox" id="toggle">
+								<div>
+									<ul>
+										<a href="TheStory-Scene1.html">
+										<li>
+											Scene 1
+										</li></a>
+										<a href="TheStory-Scene2.html">
+										<li>
+											Scene 2
+										</li></a>
+									</ul>
+								</div>
+							</div>
+						</li>
 
-                <li>
-                    <a href="Hard-Spartans.html">Hard Spartans</a>
-                </li>
+						<li>
+							<a href="Hard-Spartans.html">Hard Spartans</a>
+						</li>
 
-                <li>
-                    <a href="Soft-Spartans.html">Soft Spartans</a>
-                </li>
-                
-                <li class="active">
-                    <a href="Video.html" id="current">Video</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Main Content -->
-    <div id="mainContent" style="text-align: center">
-        <iframe width="560" height="315" src="//www.youtube.com/embed/SY4kTc96tm4" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <!-- Footer -->
-    <footer>
-        <p>
-            Copyright &copy; 2014 <a href="http://softuni.bg">SoftUni</a> - BakerMillerPink Team
-        </p>
-    </footer>
-</div>
-</body>
+						<li>
+							<a href="Soft-Spartans.html">Soft Spartans</a>
+						</li>
+
+						<li class="active">
+							<a href="Video.html" id="current">Video</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Main Content -->
+			<div id="mainContent" style="text-align: center">
+				<video width="560" height="315" controls>
+					<source src="videos/nakov.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<br />
+				<iframe width="560" height="315" src="//www.youtube.com/embed/SY4kTc96tm4" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<!-- Footer -->
+			<footer>
+				<p>
+					Copyright &copy; 2014 <a href="http://softuni.bg">SoftUni</a> - BakerMillerPink Team
+				</p>
+			</footer>
+		</div>
+	</body>
 </html>
