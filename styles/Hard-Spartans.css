@@ -20,6 +20,10 @@
 #info_txt a, #txt_f a {
 	padding-left: 0;
 }
+#info_txt:first-letter {
+	font-size: 250%;
+	font-style: italic;
+}
 
 /*responsive design for tablets*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {

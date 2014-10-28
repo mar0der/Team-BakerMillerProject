@@ -1,44 +1,92 @@
-article
-{
-    background-color:transparent;
-    margin-left:10%;
-    width: 75%;
-    display: inline-block;
-    font-size: 1.6em;
+article {
+	background-color: transparent;
+	margin-left: 10%;
+	width: 75%;
+	display: inline-block;
+	font-size: 1.6em;
 }
 
-article header
-{
-    width:100%;
-    color:#A80000 ;
-    font-size:2em;
+article header {
+	width: 100%;
+	color: #A80000;
+	font-size: 2em;
 }
 
-article{
-    margin-top: 20px;
+article {
+	margin-top: 20px;
 }
 
-section> article >div{
-    height: 300px;
+section > article > div {
+	height: 300px;
 }
-article div p::first-letter{
-    font-size:200%;
-    color: #E00000;
+article div p:first-letter {
+	font-size: 200%;
+	color: #E00000;
 }
-article div p::first-line{
-    font-style: italic;
-    font-size: 1.1em;
-}
-
-article div p
-{
-    padding-left: 25%;
-    color:#E00000;
+article div p:first-line {
+	font-style: italic;
+	font-size: 1.1em;
 }
 
-article footer a
-{
-    padding-left: 40%;
-    color:#E00000;
-    font-style:italic;
+article div p {
+	padding-left: 25%;
+	color: #E00000;
+}
+
+article footer a {
+	padding-left: 40%;
+	color: #E00000;
+	font-style: italic;
+}
+
+/*responsive design for laptops*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	article div img {
+		margin-right: 15px;
+	}
+}
+
+/*responsive design for tablets*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	div#mainContent {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+	section > article > div {
+		height: auto;
+	}
+	article div p {
+		padding-left: 0;
+	}
+	article div img {
+		margin-right: 15px;
+	}
+
+	article footer a {
+		padding-left: 0;
+	}
+
+}
+
+/*responsive design for smartphones*/
+@media screen and (max-width: 768px) {
+	div#mainContent {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+	section > article > div {
+		height: auto;
+	}
+	article div p {
+		padding-left: 0;
+	}
+	article div img {
+		margin-right: 15px;
+	}
+	article footer a {
+		padding-left: 0;
+	}
+
 }
