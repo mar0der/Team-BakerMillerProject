@@ -226,6 +226,7 @@ div#fb-like {
 		height: 100%;
 		width: auto;
 	}
+
 	/*main*/
 	div#mainContent > video {
 		width: 90%;
@@ -238,6 +239,8 @@ div#fb-like {
 	div#wrapper {
 		width: 100%;
 	}
+	/*header*/
+
 	/*main*/
 	div#mainContent > video {
 		width: 90%;
@@ -250,6 +253,42 @@ div#fb-like {
 	div#wrapper {
 		width: 100%;
 		min-width: 240px;
+	}
+	/*header*/
+
+	div#wrapper > header > nav > ul > li {
+		float: none;
+		display: block;
+	}
+	div#wrapper > header > nav {
+		padding-left: 0;
+		height: auto;
+		border-radius: 0;
+	}
+
+	div#wrapper > header > nav > ul {
+		margin-left: 0;
+		width: 100%;
+	}
+	div#wrapper > header > nav > ul > li {
+		width: 100%;
+	}
+	div#wrapper > header > nav > ul > li > a:link, div#wrapper > header > nav > ul > li a:visited {
+		width: 100%;
+		padding: 0px 0px;
+	}
+
+	#submenu div ul a {
+		background: #CF5C3F;
+		color: #fff;!important;
+	}
+
+	label {
+		padding: 0;
+	}
+
+	div#baloonContainer {
+		position: absolute;
 	}
 	/*main*/
 	div#mainContent > video {

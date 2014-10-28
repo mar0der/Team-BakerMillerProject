@@ -125,7 +125,7 @@ div#wrapper > header > div > p.triangle-right {
 	width: 40%;
 	margin-left: 40px;
 	padding: 10px;
-	padding-bottom:0;
+	padding-bottom: 0;
 	border-radius: 10px;
 	background: none repeat scroll 0% 0%;
 	background-color: rgba(255,255,255,0.6);
@@ -199,5 +199,10 @@ div#wrapper > header > div > p.triangle-right:after {
 
 		width: 99%;
 		height: 350px;
+	}
+	div#wrapper > header > div > p.triangle-right {
+		position:absolute;
+		top: 6%;
+		left: 0;
 	}
 }
