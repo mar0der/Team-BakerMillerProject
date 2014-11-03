@@ -11,16 +11,16 @@
 	margin-right: 100px;
 	margin-left: 0px;
 }
-#info_txt, #txt_f {
+.info_txt, .txt_f {
 	float: right;
 	width: 400px;
 	margin-bottom: 100px;
 	color: red;
 }
-#info_txt a, #txt_f a {
+.info_txt a, .txt_f a {
 	padding-left: 0;
 }
-#info_txt:first-letter {
+.info_txt:first-letter {
 	font-size: 250%;
 	font-style: italic;
 }
@@ -41,13 +41,13 @@
 		margin: 0 auto;
 		padding: 0 15px;
 	}
-	#info_txt, #txt_f {
+	.info_txt, .txt_f {
 		float: right;
 		width: 100%;
 		margin-bottom: 100px;
 		color: red;
 	}
-	#info_txt a, #txt_f a {
+	.info_txt a, .txt_f a {
 		padding-left: 0;
 	}
 
