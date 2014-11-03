@@ -140,16 +140,20 @@ input[type=checkbox]:checked + div {
 	padding-left: 0;
 }
 
-#submenu div ul a {
+#submenu div ul li {
 	padding: 0 20px 0 20px;
 	text-align: center;
 	display: block;
 	z-index: 100;
 	background-color: rgba(255,255,255,0.6);
-	text-decoration: none;
-	border-top: #000 1px solid;
 	list-style: none;
 	box-sizing: border-box;
+}
+
+#submenu div ul li a {
+	text-decoration: none;
+
+	border-top: #000 1px solid;
 }
 
 #submenu div ul a:visited, #submenu div ul a:link {
@@ -170,6 +174,7 @@ div#mainContent {
 
 div#mainContent > img {
 	height: 650px;
+	width: 100%;
 }
 
 /***** Footer *****/
