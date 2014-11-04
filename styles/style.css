@@ -169,8 +169,9 @@ input[type=checkbox]:checked + div {
 /***** Main *****/
 
 div#mainContent>img {
-	height: 650px;
+	height: 100%;
 	width: 100%;
+
 }
 
 /***** Footer *****/
