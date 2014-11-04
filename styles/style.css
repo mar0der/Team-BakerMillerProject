@@ -168,11 +168,7 @@ input[type=checkbox]:checked + div {
 
 /***** Main *****/
 
-div#mainContent {
-	margin-top: 15px;
-}
-
-div#mainContent > img {
+div#mainContent>img {
 	height: 650px;
 	width: 100%;
 }

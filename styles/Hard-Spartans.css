@@ -6,7 +6,10 @@
 	margin-left: 0px;
 }
 #mainContent > article > img {
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
+	height: 100%;
+	max-height: 457px;
 	margin-bottom: 10px;
 	margin-right: 100px;
 	margin-left: 0px;
